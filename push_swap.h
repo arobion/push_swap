@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 10:16:48 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/18 17:10:36 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 17:51:48 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -141,6 +141,7 @@ void				instr_rb(int *pile2, t_index *n);
 void				instr_rr(int *pile1, int *pile2, t_index *n);
 void				instr_rra(int *pile1, t_index *n);
 void				instr_rrb(int *pile2, t_index *n);
+void				instr_rrr(int *pile1, int *pile2, t_index *n);
 
 int					*ft_parsing(int argc, char **argv);
 int					*ft_parsing_swap(int argc, char **argv);

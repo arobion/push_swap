@@ -6,7 +6,7 @@
 #    By: arobion <arobion@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/18 10:20:11 by arobion           #+#    #+#              #
-#    Updated: 2018/01/18 16:59:45 by arobion          ###   ########.fr        #
+#    Updated: 2018/01/18 17:51:16 by arobion          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ SRC1 =	checker.c \
 		check_do_instr.c \
 		check_do_instr2.c \
 		check_do_instr3.c \
+		check_do_instr4.c \
 		atoi_swap.c \
 		ft_free.c
 

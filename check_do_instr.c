@@ -6,16 +6,30 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 18:13:27 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/18 16:57:18 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 17:51:02 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static void	instr_rrr(int *pile1, int *pile2, t_index *n)
+static int	ft_make2(int *pile1, int *pile2, char *line, t_index *n)
 {
-	instr_rra(pile1, n);
-	instr_rrb(pile2, n);
+
+	if (ft_strcmp(line, "rr") == 0 ||\
+			ft_strcmp(line, "\033[34;01mrr\033[00m") == 0)
+		instr_rr(pile1, pile2, n);
+	else if (ft_strcmp(line, "rra") == 0 ||\
+			ft_strcmp(line, "\033[32;02mrra\033[00m") == 0)
+		instr_rra(pile1, n);
+	else if (ft_strcmp(line, "rrb") == 0 ||\
+			ft_strcmp(line, "\033[33;02mrrb\033[00m") == 0)
+		instr_rrb(pile2, n);
+	else if (ft_strcmp(line, "rrr") == 0 ||\
+			ft_strcmp(line, "\033[34;06mrrr\033[00m") == 0)
+		instr_rrr(pile1, pile2, n);
+	else
+		return (0);
+	return (1);
 }
 
 static int	ft_make(int *pile1, int *pile2, char *line, t_index *n)
@@ -26,24 +40,20 @@ static int	ft_make(int *pile1, int *pile2, char *line, t_index *n)
 		instr_sb(pile2, n);
 	else if (ft_strcmp(line, "ss") == 0)
 		instr_ss(pile1, pile2, n);
-	else if (ft_strcmp(line, "pa") == 0)
+	else if (ft_strcmp(line, "pa") == 0 ||\
+			ft_strcmp(line, "\033[35;01mpa\033[00m") == 0)
 		instr_pa(pile1, pile2, n);
-	else if (ft_strcmp(line, "pb") == 0)
+	else if (ft_strcmp(line, "pb") == 0 ||\
+			ft_strcmp(line, "\033[36;01mpb\033[00m") == 0)
 		instr_pb(pile1, pile2, n);
-	else if (ft_strcmp(line, "ra") == 0)
+	else if (ft_strcmp(line, "ra") == 0 ||\
+			ft_strcmp(line, "\033[32;01mra\033[00m") == 0)
 		instr_ra(pile1, n);
-	else if (ft_strcmp(line, "rb") == 0)
+	else if (ft_strcmp(line, "rb") == 0 ||\
+			ft_strcmp(line, "\033[33;01mrb\033[00m") == 0)
 		instr_rb(pile2, n);
-	else if (ft_strcmp(line, "rr") == 0)
-		instr_rr(pile1, pile2, n);
-	else if (ft_strcmp(line, "rra") == 0)
-		instr_rra(pile1, n);
-	else if (ft_strcmp(line, "rrb") == 0)
-		instr_rrb(pile2, n);
-	else if (ft_strcmp(line, "rrr") == 0)
-		instr_rrr(pile1, pile2, n);
 	else
-		return (0);
+		return (ft_make2(pile1, pile2, line, n));
 	return (1);
 }
 
