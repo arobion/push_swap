@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 10:15:14 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/18 14:50:56 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 16:57:47 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,5 @@ int		main(int argc, char **argv)
 		write(1, "KO\n", 3);
 	else if (i == -1)
 		write(1, "Error\n", 6);
-	free(pile);
 	return (1);
 }

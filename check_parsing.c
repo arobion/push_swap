@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 14:33:51 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/18 13:29:18 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 17:09:13 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ int			*ft_parsing(int argc, char **argv)
 	{
 		if (!(ft_is_number(argv[i + 1])))
 			j = 1;
-		tmp[i] = ft_long_atoi(argv[i + 1]);
+		tmp[i] = ft_atoi_swap(argv[i + 1]);
 		if (!(ft_check(tmp, i)))
 			j = 1;
 		i++;
@@ -104,7 +104,7 @@ int			*ft_parsing_swap(int argc, char **argv)
 	{
 		if (!(ft_is_number(argv[i])))
 			j = 1;
-		tmp[i] = ft_long_atoi(argv[i]);
+		tmp[i] = ft_atoi_swap(argv[i]);
 		if (!(ft_check(tmp, i)))
 			j = 1;
 		i++;
