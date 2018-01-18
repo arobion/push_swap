@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/16 13:21:11 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/18 11:45:55 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 14:53:22 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,6 @@ int		ft_find_after_bigger(int to_return, int *pile1, t_index *index)
 int		ft_find_which_place_top_of_pa(int to_put, int *pile1,\
 		t_index *index, t_datas *d)
 {
-	int		i;
 	int		to_return;
 
 	to_return = ft_find_smallest_bigger(to_put, pile1, index);

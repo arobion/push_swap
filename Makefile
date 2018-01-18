@@ -6,13 +6,13 @@
 #    By: arobion <arobion@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/18 10:20:11 by arobion           #+#    #+#              #
-#    Updated: 2018/01/18 14:36:47 by arobion          ###   ########.fr        #
+#    Updated: 2018/01/18 14:49:23 by arobion          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
 
-CFLAGS = -g3#-Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra
 
 NAME1 = checker
 

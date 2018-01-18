@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 18:13:27 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/18 14:33:42 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 14:51:47 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ static int	ft_make(int *pile1, int *pile2, char *line, t_index *n)
 	return (1);
 }
 
-static int	ft_check_sort(int *pile1, int *pile2, int argc, t_index n)
+static int	ft_check_sort(int *pile1, int argc, t_index n)
 {
 	int		i;
 
@@ -87,7 +87,7 @@ int			do_instr(int *pile1, int argc)
 			return (free_false(pile2, line));
 		free(line);
 	}
-	if (!(ft_check_sort(pile1, pile2, argc, n)))
+	if (!(ft_check_sort(pile1, argc, n)))
 	{
 		free(pile1);
 		free(pile2);

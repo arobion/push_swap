@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/16 13:14:11 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/17 17:56:56 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 14:53:09 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,6 @@ int		find_closest_in_the_n_biggest_to_x(int *pile2,\
 {
 	int		i;
 	int		*biggest;
-	int		j;
 	int		to_return;
 
 	i = 0;

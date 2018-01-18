@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/16 13:24:39 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/18 13:36:00 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 14:52:40 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,6 @@ void	ft_reput_sorted_to_pile1_for_small(int *pile1, int *pile2,\
 void	ft_reput_sorted_to_pile1(int *pile1, int *pile2,\
 		t_index *index, t_datas *d)
 {
-	int		to_place;
-
 	d->med = d->pack_size / 2;
 	d->x = d->encadreur;
 	d->to_put = find_closest_in_the_n_biggest_to_x(pile2, index, 6, d->x);

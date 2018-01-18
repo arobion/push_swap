@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/16 13:09:32 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/17 17:56:38 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 14:52:58 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,6 @@ int		find_closest_in_the_n_smallest_from_x(int *pile2,\
 {
 	int		i;
 	int		*smallest;
-	int		j;
 	int		to_return;
 
 	i = 0;

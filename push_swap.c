@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/19 12:27:59 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/18 14:43:14 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 14:52:09 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int		main(int argc, char **argv)
 	int		*pile;
 	char	**av;
 
+	av = NULL;
 	if (argc == 1)
 		return (write(1, "Error\n", 6));
 	if (argc == 2)

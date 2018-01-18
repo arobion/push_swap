@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 10:15:14 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/18 14:35:08 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 14:50:56 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int		main(int argc, char **argv)
 	int		i;
 	char	**av;
 
+	av = NULL;
 	if (argc == 1)
 		return (0);
 	if (argc == 2)
