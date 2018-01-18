@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/10 11:58:24 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/18 17:11:40 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 17:33:21 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,21 +70,21 @@ void	ft_put_instr(char *save, int s)
 		if (save[i] == 1)
 			write(1, "sa\n", 3);
 		if (save[i] == 3)
-			write(1, "pa\n", 3);
+			write(1, "\033[35;01mpa\033[00m\n", 16);
 		if (save[i] == 4)
-			write(1, "pb\n", 3);
+			write(1, "\033[36;01mpb\033[00m\n", 16);
 		if (save[i] == 5)
-			write(1, "ra\n", 3);
+			write(1, "\033[32;01mra\033[00m\n", 16);
 		if (save[i] == 6)
-			write(1, "rb\n", 3);
+			write(1, "\033[33;01mrb\033[00m\n", 16);
 		if (save[i] == 7)
-			write(1, "rra\n", 4);
+			write(1, "\033[32;02mrra\033[00m\n", 17);
 		if (save[i] == 8)
-			write(1, "rrb\n", 4);
+			write(1, "\033[33;02mrrb\033[00m\n", 17);
 		if (save[i] == 9)
-			write(1, "rrr\n", 4);
+			write(1, "\033[34;06mrrr\033[00m\n", 17);
 		if (save[i] == 10)
-			write(1, "rr\n", 3);
+			write(1, "\033[34;01mrr\033[00m\n", 16);
 		i++;
 	}
 }
