@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 10:15:14 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/18 16:57:47 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 17:35:47 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@ int		ft_norme(char **av, char **argv, int **pile, int argc)
 	j = 0;
 	if (!(av = ft_strsplit(argv[1], ' ')))
 	{
-		write(1, "Error\n", 6);
+		write(1, "\033[31;01mError\033[00m\n", 19);
 		exit(0);
 	}
 	while (av[j] != 0)
 		j++;
 	if (!(*pile = ft_parsing_swap(j + 1, av)))
 	{
-		write(1, "Error\n", 6);
+		write(1, "\033[31;01mError\033[00m\n", 19);
 		exit(0);
 	}
 	argc = j + 1;
@@ -48,13 +48,13 @@ int		main(int argc, char **argv)
 	else
 	{
 		if (!(pile = ft_parsing(argc, argv)))
-			return (write(1, "Error\n", 6));
+			return (write(1, "\033[31;01mError\033[00m\n", 19));
 	}
 	if ((i = do_instr(pile, argc - 1)) == 1)
 		return (write(1, "OK\n", 3));
 	else if (i == 0)
 		write(1, "KO\n", 3);
 	else if (i == -1)
-		write(1, "Error\n", 6);
+		write(1, "\033[31;01mError\033[00m\n", 19);
 	return (1);
 }
