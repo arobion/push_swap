@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 18:13:27 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/18 17:51:02 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 17:56:45 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 static int	ft_make2(int *pile1, int *pile2, char *line, t_index *n)
 {
-
 	if (ft_strcmp(line, "rr") == 0 ||\
 			ft_strcmp(line, "\033[34;01mrr\033[00m") == 0)
 		instr_rr(pile1, pile2, n);
