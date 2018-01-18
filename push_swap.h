@@ -6,7 +6,7 @@
 /*   By: arobion <arobion@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 10:16:48 by arobion           #+#    #+#             */
-/*   Updated: 2018/01/18 17:00:26 by arobion          ###   ########.fr       */
+/*   Updated: 2018/01/18 17:10:36 by arobion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,6 @@ typedef struct		s_rot
 	int		nb_rotate;
 	int		nb_reverse_rotate;
 }					t_rot;
-
 
 long long			ft_atoi_swap(const char *str);
 void				ft_push_swap(int *origine, int nb);
