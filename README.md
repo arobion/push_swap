@@ -5,5 +5,4 @@ projet push_swap 42
 
 ~5250 coups pour 500
 
-ajout de couleurs à la fin, cela ralentit enormement le checker, pour la version sans couleurs, 
-aller au commit : 12db4e860e4f2c4a1a1a1bab39aa29e70e204b5d
+through this project, you will have to sort a stack with a limit number of instructions, in as few moves as possible. To succeed, you'll need to use various sorting algorithms and choose the solution(s) most appropriate for a highly optimised data sorting.
